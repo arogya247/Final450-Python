@@ -1,4 +1,6 @@
 # GFG
+## Time: O(N)
+## Space: O(N)
 
 def levelOrder(self,root ):
         ans = []
