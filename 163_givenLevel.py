@@ -1,5 +1,5 @@
 ## GFG
-# Expected Time Complexity: O(N)
+# Expected Time Complexity: O(N^2)  Worst Case
 # Expected Auxiliary Space: O(N)
 
 
