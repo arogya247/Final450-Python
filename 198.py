@@ -1,3 +1,5 @@
+# GFG
+
 def check(self, root):
         
         if root==None:
