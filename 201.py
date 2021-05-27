@@ -1,6 +1,6 @@
 #Function to check whether a Binary Tree is BST or not.
     def isBST(self, root):
-        
+        '''    
         # Traverse the tree in inorder fashion 
         # and keep track of previous node
         # return true if tree is Binary 
@@ -12,6 +12,7 @@
             # if tree is empty return True
             if root is None:
                 return True
+            
                 
             if isbst_rec(root.left) is False:
                 return False
@@ -27,10 +28,11 @@
         prev = None
         
         return isbst_rec(root)
+        ''' 
         
         
-        '''
-        ## This solution was acceptable but i didnt understand
+        ## This is a great solution
+        ## see gfg vid on u tube for explanation
         
         INT_MAX = 4294967296
         INT_MIN = -4294967296
@@ -41,15 +43,15 @@
             if node is None:
                 return True
                 
-            if node.data < mini or node.data > maxi:
+            if node.data <= mini or node.data >= maxi:
                 return False
                 
-            return (isBSTUtil(node.left, mini, node.data-1) and 
-            isBSTUtil(node.right, node.data+1, maxi))
+            return (isBSTUtil(node.left, mini, node.data) and 
+            isBSTUtil(node.right, node.data, maxi))
         
         
         return isBSTUtil(root, INT_MIN, INT_MAX)
-        '''
+        
         
         
         '''
